@@ -1,10 +1,11 @@
 ===  SMNTCS Pinterest Save Button ===
+
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6L8L28URSA242
 Tags: wordpress, plugin, image, images, photo, photos, pin it, pin it button, pinterest, pinterest pin it button, pinterest save button, pinterest button, social, social button, social media
+Version: 1.2
 Requires at least: 4.0
-Tested up to: 4.5.2
-Stable tag: 1.1.1
+Tested up to: 5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,11 +31,11 @@ You have beautiful pictures and you want to whole world to see them? Why not add
 
 == Changelog ==
 
-= 1.1.1 =
+= 1.2 =
 * Correct text domain
 
-= 1.1.0 =
+= 1.1 =
 * Add text domain
 
-= 1.0.0 =
+= 1.0 =
 * Initial release
