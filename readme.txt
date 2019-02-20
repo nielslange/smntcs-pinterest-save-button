@@ -2,10 +2,10 @@
 
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6L8L28URSA242
-Tags: wordpress, plugin, image, images, photo, photos, pin it, pin it button, pinterest, pinterest pin it button, pinterest save button, pinterest button, social, social button, social media
-Version: 1.2
+Tags: Pinterest, Pinterest Save Button, Pinterest Button
+Version: 1.3
 Requires at least: 4.0
-Tested up to: 5.0
+Tested up to: 5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
