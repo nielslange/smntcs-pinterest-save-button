@@ -3,9 +3,10 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6L8L28URSA242
 Tags: Pinterest, Pinterest Save Button, Pinterest Button
-Version: 1.3
+Version: 1.4
 Requires at least: 4.0
-Tested up to: 5.1
+Tested up to: 5.2
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +31,9 @@ You have beautiful pictures and you want to whole world to see them? Why not add
 3. Adjust settings of Pinterest Save Button 
 
 == Changelog ==
+
+= 1.4 =
+* Test up to 5.2
 
 = 1.3 =
 * Test up to 5.1
