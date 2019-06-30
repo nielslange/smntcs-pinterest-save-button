@@ -31,6 +31,9 @@ You have beautiful pictures and you want to whole world to see them? Why not add
 
 == Changelog ==
 
+= 1.3 =
+* Test up to 5.1
+
 = 1.2 =
 * Correct text domain
 

@@ -3,15 +3,22 @@
  * Plugin Name: SMNTCS Pinterest Save Button
  * Plugin URI: https://github.com/nielslange/smntcs-pinterest-save-button
  * Description: Adds a Pinterest Save Button to your images that becomes visible when a visitor hovers the image.
- * Author: Niels Lange
- * Author URI: https://nielslange.com
+ * Author: Niels Lange <info@nielslange.de>
+ * Author URI: https://nielslange.de
  * Text Domain: smntcs-pinterest-save-button
  * Domain Path: /languages/
  * Version: 1.3
  * Requires at least: 3.4
+ * Requires PHP: 5.6
  * Tested up to: 5.1
- * License: GPLv2
+ * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @category   Plugin
+ * @package    WordPress
+ * @subpackage SMNTCS Pinterest Save Button
+ * @author     Niels Lange <info@nielslange.de>
+ * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
 // Avoid direct plugin access
