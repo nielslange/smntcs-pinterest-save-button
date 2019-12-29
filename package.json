@@ -1,0 +1,26 @@
+{
+	"name": "smntcs-pinterest-save-button",
+	"version": "1.0.0",
+	"description": "Adds a Pinterest Save Button to your images that becomes visible when a visitor hovers the image.",
+	"author": "Niels Lange",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Pinterest Save Button"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-pinterest-save-button#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nielslange/smntcs-pinterest-save-button.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nielslange/smntcs-pinterest-save-button/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^5.0.0"
+	},
+	"scripts": {
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	}
+}
