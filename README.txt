@@ -27,7 +27,7 @@ You have beautiful pictures and you want to whole world to see them? Why not add
 == Screenshots ==
 
 1. Upload and activate the plugin
-2. Open 'Apperance' » 'Customize'
+2. Open `Apperance → Customize`
 3. Adjust settings of Pinterest Save Button 
 
 == Changelog ==
