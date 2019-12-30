@@ -35,40 +35,61 @@ function smntcs_pinterest_save_button_load_textdomain() {
 // Add Pinterest Save Button to WordPress Customizer
 add_action( 'customize_register', 'smntcs_pinterest_save_button_register_customize' );
 function smntcs_pinterest_save_button_register_customize( $wp_customize ) {
-	$wp_customize->add_section( 'pinterest_save_button_section', array(
-		'title'    => __( 'Pinterest Save Button', 'smntcs-pinterest-save-button' ),
-		'priority' => 150,
-	) );
+	$wp_customize->add_section(
+		'pinterest_save_button_section',
+		array(
+			'title'    => __( 'Pinterest Save Button', 'smntcs-pinterest-save-button' ),
+			'priority' => 150,
+		)
+	);
 
-	$wp_customize->add_setting( 'show_button_on_hover', array(
-		'default' => false,
-	) );
+	$wp_customize->add_setting(
+		'show_button_on_hover',
+		array(
+			'default' => false,
+		)
+	);
 
-	$wp_customize->add_control( 'show_button_on_hover', array(
-		'label'   => __( 'Show button on hover', 'smntcs-pinterest-save-button' ),
-		'section' => 'pinterest_save_button_section',
-		'type'    => 'checkbox',
-	) );
+	$wp_customize->add_control(
+		'show_button_on_hover',
+		array(
+			'label'   => __( 'Show button on hover', 'smntcs-pinterest-save-button' ),
+			'section' => 'pinterest_save_button_section',
+			'type'    => 'checkbox',
+		)
+	);
 
-	$wp_customize->add_setting( 'show_round_button', array(
-		'default' => false,
-	) );
+	$wp_customize->add_setting(
+		'show_round_button',
+		array(
+			'default' => false,
+		)
+	);
 
-	$wp_customize->add_control( 'show_round_button', array(
-		'label'   => __( 'Show round button', 'smntcs-pinterest-save-button' ),
-		'section' => 'pinterest_save_button_section',
-		'type'    => 'checkbox',
-	) );
+	$wp_customize->add_control(
+		'show_round_button',
+		array(
+			'label'   => __( 'Show round button', 'smntcs-pinterest-save-button' ),
+			'section' => 'pinterest_save_button_section',
+			'type'    => 'checkbox',
+		)
+	);
 
-	$wp_customize->add_setting( 'show_large_button', array(
-		'default' => false,
-	) );
+	$wp_customize->add_setting(
+		'show_large_button',
+		array(
+			'default' => false,
+		)
+	);
 
-	$wp_customize->add_control( 'show_large_button', array(
-		'label'   => __( 'Show large button', 'smntcs-pinterest-save-button' ),
-		'section' => 'pinterest_save_button_section',
-		'type'    => 'checkbox',
-	) );
+	$wp_customize->add_control(
+		'show_large_button',
+		array(
+			'label'   => __( 'Show large button', 'smntcs-pinterest-save-button' ),
+			'section' => 'pinterest_save_button_section',
+			'type'    => 'checkbox',
+		)
+	);
 }
 
 // Enqueue Pinterest script
