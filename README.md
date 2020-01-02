@@ -23,6 +23,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-pinterest-save-b
 
 ## Changelog
 
+### 1.5
+* Test up to 5.3
+
 ### 1.4
 * Test up to 5.2
 
