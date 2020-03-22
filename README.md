@@ -1,4 +1,4 @@
-# SMNTCS WooCommerce Quantity Buttons
+# SMNTCS Pinterest Save Button
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 [![Build Status](https://api.travis-ci.com/nielslange/smntcs-pinterest-save-button.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-pinterest-save-button)
@@ -8,6 +8,7 @@
 [![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-pinterest-save-button.svg)](https://wordpress.org/plugins/smntcs-pinterest-save-button/)
 [![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-pinterest-save-button.svg)](https://wordpress.org/plugins/smntcs-pinterest-save-button/)
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-pinterest-save-button.svg)](https://wordpress.org/plugins/smntcs-pinterest-save-button/)
+![Deploy to WordPress.org](https://github.com/nielslange/smntcs-pinterest-save-button/workflows/Deploy%20to%20WordPress.org/badge.svg)
 
 Shows a Pinterest Save Button on all images on hover.
 
