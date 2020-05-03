@@ -10,6 +10,8 @@
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-pinterest-save-button.svg)](https://wordpress.org/plugins/smntcs-pinterest-save-button/)
 ![Deploy to WordPress.org](https://github.com/nielslange/smntcs-pinterest-save-button/workflows/Deploy%20to%20WordPress.org/badge.svg)
 
+## Description
+
 Shows a Pinterest Save Button on all images on hover.
 
 ## Installation
