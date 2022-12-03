@@ -1,14 +1,13 @@
 ===  SMNTCS Pinterest Save Button ===
 
-Contributors: nielslange
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6L8L28URSA242
-Tags: Pinterest, Pinterest Save Button, Pinterest Button
-Version: 1.5
-Requires at least: 4.0
-Tested up to: 5.3
-Requires PHP: 5.6
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors:       nielslange
+Tags:               Pinterest, Pinterest Save Button, Pinterest Button
+Stable tag:         1.6
+Tested up to:       6.1
+Requires PHP:       5.6
+Requires at least:  3.4
+License:            GPL v2 or later
+License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
 Shows a Pinterest Save Button on all images on hover.
 
@@ -18,34 +17,44 @@ You have beautiful pictures and you want to whole world to see them? Why not add
 
 == Installation ==
 
-1. Upload 'smntcs-pinterest-save-button' to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to 'Apperance' » 'Customize'
-4. Activate the Pinterest Save Button
-5. Adjust settings based on your needs
+1. Upload `smntcs-pinterest-save-button` to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the `Plugins` menu in WordPress.
+3. Go to `Apperance` » `Customize`.
+4. Activate the Pinterest Save Button.
+5. Adjust settings based on your needs.
 
 == Screenshots ==
 
-1. Upload and activate the plugin
-2. Open `Apperance → Customize`
-3. Adjust settings of Pinterest Save Button 
+1. Upload and activate the plugin.
+2. Open `Apperance → Customize`.
+3. Adjust settings of Pinterest Save Button.
 
 == Changelog ==
 
-= 1.5 =
-* Test up to 5.3
+= 1.6 (2022.12.03) =
 
-= 1.4 =
-* Test up to 5.2
+- Test up to WP 6.1
 
-= 1.3 =
-* Test up to 5.1
+= 1.5 (2020.01.02) =
 
-= 1.2 =
-* Correct text domain
+- Test up to WP 5.3
 
-= 1.1 =
-* Add text domain
+= 1.4 (2019.12.30) =
 
-= 1.0 =
-* Initial release
+- Test up to WP 5.2
+
+= 1.3 (2019.06.30) =
+
+- Test up to WP 5.1
+
+= 1.2 (2019.02.19) =
+
+- Correct text domain
+
+= 1.1 (2019.01.14) =
+
+- Add text domain
+
+= 1.0 (2016.07.20) =
+
+- Initial release

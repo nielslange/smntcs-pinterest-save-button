@@ -1,42 +1,21 @@
 <?php
 /**
- * Plugin Name: SMNTCS Pinterest Save Button
- * Plugin URI: https://github.com/nielslange/smntcs-pinterest-save-button
- * Description: Adds a Pinterest Save Button to your images that becomes visible when a visitor hovers the image.
- * Author: Niels Lange <info@nielslange.de>
- * Author URI: https://nielslange.de
- * Text Domain: smntcs-pinterest-save-button
- * Domain Path: /languages/
- * Version: 1.5
- * Requires at least: 3.4
- * Requires PHP: 5.6
- * Tested up to: 5.3
- * License: GPL2+
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Plugin Name:           SMNTCS Pinterest Save Button
+ * Plugin URI:            https://github.com/nielslange/smntcs-pinterest-save-button
+ * Description:           Adds a Pinterest Save Button to your images that becomes visible when a visitor hovers the image.
+ * Author:                Niels Lange
+ * Author URI:            https://nielslange.de
+ * Text Domain:           smntcs-pinterest-save-button
+ * Version:               1.6
+ * Requires PHP:          5.6
+ * Requires at least:     3.4
+ * License:               GPL v2 or later
+ * License URI:           https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @category   Plugin
- * @package    WordPress
- * @subpackage SMNTCS Pinterest Save Button
- * @author     Niels Lange <info@nielslange.de>
- * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @package SMNTCS_Pinterest_Save_Button
  */
 
-/**
- * Avoid direct plugin access
- *
- * @since 1.0.0
- */
-if ( ! defined( 'ABSPATH' ) ) {
-	die( '¯\_(ツ)_/¯' );
-}
-
-/**
- * Load text domain
- */
-function smntcs_pinterest_save_button_load_textdomain() {
-	load_plugin_textdomain( 'smntcs-pinterest-save-button', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'smntcs_pinterest_save_button_load_textdomain' );
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Add Pinterest Save Button to WordPress Customizer
