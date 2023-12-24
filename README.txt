@@ -2,8 +2,8 @@
 
 Contributors:       nielslange
 Tags:               Pinterest, Pinterest Save Button, Pinterest Button
-Stable tag:         1.6
-Tested up to:       6.1
+Stable tag:         1.7
+Tested up to:       6.4
 Requires PHP:       5.6
 Requires at least:  3.4
 License:            GPL v2 or later
@@ -30,6 +30,10 @@ You have beautiful pictures and you want to whole world to see them? Why not add
 3. Adjust settings of Pinterest Save Button.
 
 == Changelog ==
+
+= 1.7 (2023.12.24) =
+
+- Test up to WP 6.4
 
 = 1.6 (2022.12.03) =
 
