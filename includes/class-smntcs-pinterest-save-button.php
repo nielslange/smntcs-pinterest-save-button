@@ -17,7 +17,7 @@ class SMNTCS_Pinterest_Save_Button {
 	 */
 	public function __construct() {
 		add_action( 'customize_register', [ $this, 'smntcs_pinterest_save_button_register_customize' ] );
-		add_action( 'wp_footer', [ $this, 'smntcs_pinterest_save_button_enqueue_pinterest_script' ] );
+		add_action( 'wp_footer', [ $this, 'smntcs_pinterest_save_button_enqueue_pinterest_script' ], 10, 0 );
 	}
 
 	/**
