@@ -5,11 +5,6 @@ on: [pull_request, push]
 jobs:
   PHPCS:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        php-version: [8.3.16] # Lock this version to run Psalm
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -43,6 +38,11 @@ jobs:
 
   Psalm:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-version: [8.3.16] # Lock this version to run Psalm
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
