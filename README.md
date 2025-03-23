@@ -22,29 +22,33 @@ Shows a Pinterest Save Button on all images on hover.
 
 ## Plugin page
 
-You can find the plugin on https://wordpress.org/plugins/smntcs-pinterest-save-button/.
+You can find the plugin on [WordPress.org](https://wordpress.org/plugins/smntcs-pinterest-save-button/).
 
 ## Changelog
 
+### 1.8 (2025.03.23)
+
+- Test up to WordPress 6.8
+
 ### 1.7 (2023.12.24)
 
-- Test up to WP 6.4
+- Test up to WordPress 6.4
 
 ### 1.6 (2022.12.03)
 
-- Test up to WP 6.1
+- Test up to WordPress 6.1
 
 ### 1.5 (2020.01.02)
 
-- Test up to WP 5.3
+- Test up to WordPress 5.3
 
 ### 1.4 (2019.12.30)
 
-- Test up to WP 5.2
+- Test up to WordPress 5.2
 
 ### 1.3 (2019.06.30)
 
-- Test up to WP 5.1
+- Test up to WordPress 5.1
 
 ### 1.2 (2019.02.19)
 
