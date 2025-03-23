@@ -11,6 +11,8 @@ jobs:
 
       - name: Install Composer dependencies
         uses: ramsey/composer-install@v1
+        with:
+          composer-options: "--ignore-platform-reqs"
 
       - name: Show PHPCS sniffs
         run: ./vendor/bin/phpcs -i
@@ -29,6 +31,8 @@ jobs:
 
       - name: Install Composer dependencies
         uses: ramsey/composer-install@v1
+        with:
+          composer-options: "--ignore-platform-reqs"
 
       - name: Show PHPLint version info
         run: ./vendor/bin/phplint --version
@@ -49,6 +53,8 @@ jobs:
 
   #     - name: Install Composer dependencies
   #       uses: ramsey/composer-install@v1
+  #       with:
+  #         composer-options: "--ignore-platform-reqs"
 
   #     - name: Show version info
   #       run: ./vendor/bin/psalm --version
