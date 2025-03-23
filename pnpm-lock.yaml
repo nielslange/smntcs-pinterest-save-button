@@ -13,7 +13,7 @@ importers:
         version: 3.5.0(prettier@3.1.1)
       '@wordpress/scripts':
         specifier: ^5.0.0
-        version: 5.1.0(@babel/core@7.23.6)(prettier@3.1.1)(react-dom@16.14.0)(react@16.14.0)
+        version: 5.1.0(@babel/core@7.23.6)(prettier@3.1.1)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
       eslint:
         specifier: 8.56.0
         version: 8.56.0
@@ -2384,7 +2384,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -6456,10 +6456,10 @@ snapshots:
 
   '@wordpress/browserslist-config@2.7.0': {}
 
-  '@wordpress/dependency-extraction-webpack-plugin@2.9.0(webpack@4.47.0)':
+  '@wordpress/dependency-extraction-webpack-plugin@2.9.0(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))':
     dependencies:
       json2php: 0.0.4
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-sources: 1.4.3
 
   '@wordpress/element@2.20.3':
@@ -6484,7 +6484,7 @@ snapshots:
       eslint-plugin-jest: 22.21.0(eslint@6.8.0)
       eslint-plugin-jsdoc: 15.12.2(eslint@6.8.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@6.8.0)
-      eslint-plugin-prettier: 3.4.1(eslint-config-prettier@6.15.0)(eslint@6.8.0)(prettier@3.1.1)
+      eslint-plugin-prettier: 3.4.1(eslint-config-prettier@6.15.0(eslint@6.8.0))(eslint@6.8.0)(prettier@3.1.1)
       eslint-plugin-react: 7.33.2(eslint@6.8.0)
       eslint-plugin-react-hooks: 1.7.0(eslint@6.8.0)
       globals: 12.4.0
@@ -6500,13 +6500,13 @@ snapshots:
       jest-matcher-utils: 25.5.0
       lodash: 4.17.21
 
-  '@wordpress/jest-preset-default@5.5.0(@babel/core@7.23.6)(jest@24.9.0)(react-dom@16.14.0)(react@16.14.0)':
+  '@wordpress/jest-preset-default@5.5.0(@babel/core@7.23.6)(jest@24.9.0)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)':
     dependencies:
       '@jest/reporters': 24.9.0
       '@wordpress/jest-console': 3.10.0(jest@24.9.0)
       babel-jest: 24.9.0(@babel/core@7.23.6)
       enzyme: 3.11.0
-      enzyme-adapter-react-16: 1.15.7(enzyme@3.11.0)(react-dom@16.14.0)(react@16.14.0)
+      enzyme-adapter-react-16: 1.15.7(enzyme@3.11.0)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
       enzyme-to-json: 3.6.2(enzyme@3.11.0)
       jest: 24.9.0
     transitivePeerDependencies:
@@ -6525,15 +6525,15 @@ snapshots:
     dependencies:
       prettier: 3.1.1
 
-  '@wordpress/scripts@5.1.0(@babel/core@7.23.6)(prettier@3.1.1)(react-dom@16.14.0)(react@16.14.0)':
+  '@wordpress/scripts@5.1.0(@babel/core@7.23.6)(prettier@3.1.1)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)':
     dependencies:
       '@wordpress/babel-preset-default': 4.20.0
-      '@wordpress/dependency-extraction-webpack-plugin': 2.9.0(webpack@4.47.0)
+      '@wordpress/dependency-extraction-webpack-plugin': 2.9.0(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
       '@wordpress/eslint-plugin': 3.4.1(eslint@6.8.0)(prettier@3.1.1)
-      '@wordpress/jest-preset-default': 5.5.0(@babel/core@7.23.6)(jest@24.9.0)(react-dom@16.14.0)(react@16.14.0)
+      '@wordpress/jest-preset-default': 5.5.0(@babel/core@7.23.6)(jest@24.9.0)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
       '@wordpress/npm-package-json-lint-config': 2.2.0(npm-package-json-lint@3.7.0)
       babel-jest: 24.9.0(@babel/core@7.23.6)
-      babel-loader: 8.3.0(@babel/core@7.23.6)(webpack@4.47.0)
+      babel-loader: 8.3.0(@babel/core@7.23.6)(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
       chalk: 2.4.2
       check-node-version: 3.3.0
       command-exists: 1.2.9
@@ -6554,8 +6554,8 @@ snapshots:
       sprintf-js: 1.1.3
       stylelint: 9.10.1
       stylelint-config-wordpress: 13.1.0(stylelint@9.10.1)
-      thread-loader: 2.1.3(webpack@4.47.0)
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      thread-loader: 2.1.3(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-bundle-analyzer: 3.9.0
       webpack-cli: 3.3.12(webpack@4.47.0)
       webpack-livereload-plugin: 2.3.0
@@ -6863,14 +6863,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-loader@8.3.0(@babel/core@7.23.6)(webpack@4.47.0):
+  babel-loader@8.3.0(@babel/core@7.23.6)(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
     dependencies:
       '@babel/core': 7.23.6
       find-cache-dir: 3.3.2
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
 
   babel-plugin-istanbul@5.2.0:
     dependencies:
@@ -7505,6 +7505,7 @@ snapshots:
   debug@2.6.9(supports-color@6.1.0):
     dependencies:
       ms: 2.0.0
+    optionalDependencies:
       supports-color: 6.1.0
 
   debug@3.2.7:
@@ -7702,7 +7703,7 @@ snapshots:
 
   entities@4.5.0: {}
 
-  enzyme-adapter-react-16@1.15.7(enzyme@3.11.0)(react-dom@16.14.0)(react@16.14.0):
+  enzyme-adapter-react-16@1.15.7(enzyme@3.11.0)(react-dom@16.14.0(react@16.14.0))(react@16.14.0):
     dependencies:
       enzyme: 3.11.0
       enzyme-adapter-utils: 1.14.1(react@16.14.0)
@@ -7921,12 +7922,13 @@ snapshots:
       object.entries: 1.1.7
       object.fromentries: 2.0.7
 
-  eslint-plugin-prettier@3.4.1(eslint-config-prettier@6.15.0)(eslint@6.8.0)(prettier@3.1.1):
+  eslint-plugin-prettier@3.4.1(eslint-config-prettier@6.15.0(eslint@6.8.0))(eslint@6.8.0)(prettier@3.1.1):
     dependencies:
       eslint: 6.8.0
-      eslint-config-prettier: 6.15.0(eslint@6.8.0)
       prettier: 3.1.1
       prettier-linter-helpers: 1.0.0
+    optionalDependencies:
+      eslint-config-prettier: 6.15.0(eslint@6.8.0)
 
   eslint-plugin-react-hooks@1.7.0(eslint@6.8.0):
     dependencies:
@@ -9222,7 +9224,9 @@ snapshots:
       pretty-format: 24.9.0
       throat: 4.1.0
     transitivePeerDependencies:
+      - bufferutil
       - supports-color
+      - utf-8-validate
 
   jest-leak-detector@24.9.0:
     dependencies:
@@ -9261,7 +9265,7 @@ snapshots:
       '@jest/types': 24.9.0
 
   jest-pnp-resolver@1.2.3(jest-resolve@24.9.0):
-    dependencies:
+    optionalDependencies:
       jest-resolve: 24.9.0
 
   jest-puppeteer@4.4.0(puppeteer@1.20.0):
@@ -10313,6 +10317,7 @@ snapshots:
   postcss-syntax@0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39):
     dependencies:
       postcss: 7.0.39
+    optionalDependencies:
       postcss-html: 0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39)
       postcss-jsx: 0.36.4(postcss-syntax@0.36.2)(postcss@7.0.39)
       postcss-less: 3.1.4
@@ -10359,7 +10364,7 @@ snapshots:
   progress@2.0.3: {}
 
   promise-inflight@1.0.1(bluebird@3.7.2):
-    dependencies:
+    optionalDependencies:
       bluebird: 3.7.2
 
   prompts@2.4.2:
@@ -11213,7 +11218,7 @@ snapshots:
 
   style-search@0.1.0: {}
 
-  stylelint-config-recommended-scss@3.3.0(stylelint-scss@3.21.0)(stylelint@9.10.1):
+  stylelint-config-recommended-scss@3.3.0(stylelint-scss@3.21.0(stylelint@9.10.1))(stylelint@9.10.1):
     dependencies:
       stylelint: 9.10.1
       stylelint-config-recommended: 2.2.0(stylelint@9.10.1)
@@ -11227,7 +11232,7 @@ snapshots:
     dependencies:
       stylelint: 9.10.1
       stylelint-config-recommended: 2.2.0(stylelint@9.10.1)
-      stylelint-config-recommended-scss: 3.3.0(stylelint-scss@3.21.0)(stylelint@9.10.1)
+      stylelint-config-recommended-scss: 3.3.0(stylelint-scss@3.21.0(stylelint@9.10.1))(stylelint@9.10.1)
       stylelint-scss: 3.21.0(stylelint@9.10.1)
 
   stylelint-scss@3.21.0(stylelint@9.10.1):
@@ -11331,7 +11336,7 @@ snapshots:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.1
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
 
@@ -11351,12 +11356,12 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  thread-loader@2.1.3(webpack@4.47.0):
+  thread-loader@2.1.3(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
     dependencies:
       loader-runner: 2.4.0
       loader-utils: 1.4.2
       neo-async: 2.6.2
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
 
   throat@4.1.0: {}
 
@@ -11742,7 +11747,7 @@ snapshots:
       loader-utils: 1.4.2
       supports-color: 6.1.0
       v8-compile-cache: 2.4.0
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       yargs: 13.3.2
 
   webpack-livereload-plugin@2.3.0:
@@ -11758,7 +11763,7 @@ snapshots:
       source-list-map: 2.0.1
       source-map: 0.6.1
 
-  webpack@4.47.0(webpack-cli@3.3.12):
+  webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)):
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -11782,8 +11787,9 @@ snapshots:
       tapable: 1.1.3
       terser-webpack-plugin: 1.4.5(webpack@4.47.0)
       watchpack: 1.7.5
-      webpack-cli: 3.3.12(webpack@4.47.0)
       webpack-sources: 1.4.3
+    optionalDependencies:
+      webpack-cli: 3.3.12(webpack@4.47.0)
     transitivePeerDependencies:
       - supports-color
 
