@@ -36,6 +36,12 @@
 		<severity>0</severity>
 	</rule>
 
+	<!-- ExcludeInclude sniffs-->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax" />
+	<rule ref="Universal.Arrays.DisallowShortArraySyntax">
+		<severity>0</severity>
+	</rule>
+
 	<!-- Exclude sniffs-->
 	<rule ref="WordPress">
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
