@@ -1,0 +1,63 @@
+name: Run PHPCS, PHPLint and Psalm
+
+on: [pull_request, push]
+
+jobs:
+  PHPCS:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Composer dependencies
+        uses: ramsey/composer-install@v1
+        with:
+          composer-options: "--ignore-platform-reqs"
+
+      - name: Show PHPCS sniffs
+        run: ./vendor/bin/phpcs -i
+
+      - name: Show PHPCS version
+        run: ./vendor/bin/phpcs --version
+
+      - name: Run PHP_CodeSniffer
+        run: composer phpcs
+
+  PHPLint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Composer dependencies
+        uses: ramsey/composer-install@v1
+        with:
+          composer-options: "--ignore-platform-reqs"
+
+      - name: Show PHPLint version info
+        run: ./vendor/bin/phplint --version
+
+      - name: Run PHPLint
+        run: composer phplint
+
+  # Psalm:
+  #   runs-on: ubuntu-latest
+
+  #   strategy:
+  #     matrix:
+  #       php-version: [8.3.16] # Lock this version to run Psalm
+
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v2
+
+  #     - name: Install Composer dependencies
+  #       uses: ramsey/composer-install@v1
+  #       with:
+  #         composer-options: "--ignore-platform-reqs"
+
+  #     - name: Show version info
+  #       run: ./vendor/bin/psalm --version
+
+  #     - name: Run Psalm
+  #       run: composer psalm

@@ -17,8 +17,7 @@ class SMNTCS_Pinterest_Save_Button {
 	 */
 	public function __construct() {
 		add_action( 'customize_register', [ $this, 'smntcs_pinterest_save_button_register_customize' ] );
-		add_action( 'wp_footer', [ $this, 'smntcs_pinterest_save_button_enqueue_pinterest_script' ] );
-
+		add_action( 'wp_footer', [ $this, 'smntcs_pinterest_save_button_enqueue_pinterest_script' ], 10, 0 );
 	}
 
 	/**
@@ -39,7 +38,7 @@ class SMNTCS_Pinterest_Save_Button {
 		$wp_customize->add_setting(
 			'show_button_on_hover',
 			[
-				'default' => false,
+				'default' => '0',
 			]
 		);
 
@@ -55,7 +54,7 @@ class SMNTCS_Pinterest_Save_Button {
 		$wp_customize->add_setting(
 			'show_round_button',
 			[
-				'default' => false,
+				'default' => '0',
 			]
 		);
 
@@ -71,7 +70,7 @@ class SMNTCS_Pinterest_Save_Button {
 		$wp_customize->add_setting(
 			'show_large_button',
 			[
-				'default' => false,
+				'default' => '0',
 			]
 		);
 
@@ -90,6 +89,7 @@ class SMNTCS_Pinterest_Save_Button {
 	 * Enqueue Pinterest script
 	 *
 	 * @since 1.0.0
+	 * @return void
 	 */
 	public function smntcs_pinterest_save_button_enqueue_pinterest_script() {
 		if ( true === get_theme_mod( 'show_button_on_hover' ) ) {
