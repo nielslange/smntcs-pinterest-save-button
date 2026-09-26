@@ -1,35 +1,75 @@
-===  SMNTCS Pinterest Save Button ===
+=== SMNTCS Pinterest Save Button ===
 
 Contributors:       nielslange
-Tags:               Pinterest, Pinterest Save Button, Pinterest Button
-Stable tag:         1.9
-Tested up to:       7.0
+Tags:               pinterest, save button, pin it, social sharing, images
+Requires at least:  4.7
+Tested up to:       7.1
 Requires PHP:       7.4
-Requires at least:  3.4
+Stable tag:         2.0
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
-Shows a Pinterest Save Button on all images on hover.
+Adds the Pinterest Save button to your images when visitors hover them, on the post types you choose.
 
 == Description ==
 
-You have beautiful pictures and you want to whole world to see them? Why not adding the Pinterest Save Button so that your visitors are able to share your pictures on their Pinterest account? This plugin makes it super easy. Install, setup, done!
+SMNTCS Pinterest Save Button adds the official Pinterest Save button to the images on your site. The button appears when a visitor hovers an image, so your visitors can pin your pictures to their Pinterest boards.
+
+= Features =
+
+* Show the Save button when visitors hover an image
+* Choose a round or a large button
+* Choose the post types that show the button, for example only posts and not pages
+* Turn the button off on the home page, archives, search results and profile pages
+* Developers can use the smntcs_pinterest_save_button_display filter for full control
 
 == Installation ==
 
 1. Upload `smntcs-pinterest-save-button` to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the `Plugins` menu in WordPress.
-3. Go to `Apperance` » `Customize`.
+3. Go to `Appearance` » `Customize`.
 4. Activate the Pinterest Save Button.
 5. Adjust settings based on your needs.
+
+== Frequently Asked Questions ==
+
+= Can I show the button only on posts? =
+
+Yes. Go to Appearance, then Customize, then Pinterest Save Button. Untick the post types that should not show the button, and untick "Show on all other pages" to hide it on the home page, archives and similar pages.
+
+= Can I control where the button appears with code? =
+
+Yes. Return false from the smntcs_pinterest_save_button_display filter to hide the button:
+
+`add_filter( 'smntcs_pinterest_save_button_display', function ( $display ) { return is_singular( 'post' ) ? $display : false; } );`
+
+= Can I show the button only on posts? =
+
+Yes. Go to Appearance, then Customize, then Pinterest Save Button. Untick the post types that should not show the button, and untick "Show on all other pages" to hide it on the home page, archives and similar pages.
+
+= Can I control where the button appears with code? =
+
+Yes. Return false from the smntcs_pinterest_save_button_display filter to hide the button:
+
+`add_filter( 'smntcs_pinterest_save_button_display', function ( $display ) { return is_singular( 'post' ) ? $display : false; } );`
 
 == Screenshots ==
 
 1. Upload and activate the plugin.
-2. Open `Apperance → Customize`.
+2. Open `Appearance → Customize`.
 3. Adjust settings of Pinterest Save Button.
 
 == Changelog ==
+
+= 2.0 (2026.09.26) =
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+- Choose the post types that show the Save button
+- Choose whether the button shows on the home page, archives and other pages
+- Add the smntcs_pinterest_save_button_display filter
+- Add a settings link to the plugins page
+- Load the Pinterest script over HTTPS
 
 = 1.9 (2026.08.14) =
 
