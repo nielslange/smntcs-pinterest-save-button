@@ -17,7 +17,7 @@ Shows a Pinterest Save Button on all images on hover.
 ## Installation
 
 1. Upload and activate the plugin.
-2. Open `Apperance → Customize`.
+2. Open `Appearance → Customize`.
 3. Adjust settings of Pinterest Save Button.
 
 ## Plugin page
@@ -25,6 +25,16 @@ Shows a Pinterest Save Button on all images on hover.
 You can find the plugin on [WordPress.org](https://wordpress.org/plugins/smntcs-pinterest-save-button/).
 
 ## Changelog
+
+### 2.0 (2026.09.26)
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+- Choose the post types that show the Save button
+- Choose whether the button shows on the home page, archives and other pages
+- Add the smntcs_pinterest_save_button_display filter
+- Add a settings link to the plugins page
+- Load the Pinterest script over HTTPS
 
 ### 1.9 (2026.08.14)
 
