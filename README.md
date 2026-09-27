@@ -26,6 +26,10 @@ You can find the plugin on [WordPress.org](https://wordpress.org/plugins/smntcs-
 
 ## Changelog
 
+### 2.1 (2026.09.27)
+
+- Remove duplicated FAQ entries from the readme
+
 ### 2.0 (2026.09.26)
 
 - Test up to WordPress 7.1

@@ -5,7 +5,7 @@ Tags:               pinterest, save button, pin it, social sharing, images
 Requires at least:  4.7
 Tested up to:       7.1
 Requires PHP:       7.4
-Stable tag:         2.0
+Stable tag:         2.1
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,16 +43,6 @@ Yes. Return false from the smntcs_pinterest_save_button_display filter to hide t
 
 `add_filter( 'smntcs_pinterest_save_button_display', function ( $display ) { return is_singular( 'post' ) ? $display : false; } );`
 
-= Can I show the button only on posts? =
-
-Yes. Go to Appearance, then Customize, then Pinterest Save Button. Untick the post types that should not show the button, and untick "Show on all other pages" to hide it on the home page, archives and similar pages.
-
-= Can I control where the button appears with code? =
-
-Yes. Return false from the smntcs_pinterest_save_button_display filter to hide the button:
-
-`add_filter( 'smntcs_pinterest_save_button_display', function ( $display ) { return is_singular( 'post' ) ? $display : false; } );`
-
 == Screenshots ==
 
 1. Upload and activate the plugin.
@@ -60,6 +50,10 @@ Yes. Return false from the smntcs_pinterest_save_button_display filter to hide t
 3. Adjust settings of Pinterest Save Button.
 
 == Changelog ==
+
+= 2.1 (2026.09.27) =
+
+- Remove duplicated FAQ entries from the readme
 
 = 2.0 (2026.09.26) =
 
