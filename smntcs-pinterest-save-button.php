@@ -6,7 +6,7 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-pinterest-save-button
- * Version:               2.0
+ * Version:               2.1
  * Requires PHP:          7.4
  * Requires at least:     4.7
  * License:               GPL v2 or later
